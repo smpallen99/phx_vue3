@@ -2,9 +2,8 @@
 import { ref } from 'vue'
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-// import HelloWorld from './components/HelloWorld.vue'
-// import HelloWorld from './components/HelloWorld.vue'
-import Test from './components/Test.vue'
+// import Test from './components/Test.vue'
+import HelloWorld from './components/HelloWorld.vue'
 import { meaningOfLife } from '../../shared'
 
 console.log('App.vue')
@@ -16,11 +15,9 @@ const increment = () => [
 </script>
 
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
-	<button @click="increment">Increment {{ counter }}</button>
-	<Test msg="Hello Vue 3" />
-	<h5>{{ meaningOfLife() }}</h5>
+  <img alt="Vue logo" src="/images/logo.png" />
+	<HelloWorld msg="Hello Vue 3 + esBuild" />
+	<h5 class="fish">{{ meaningOfLife() }}</h5>
 </template>
 
 <style>
@@ -31,5 +28,8 @@ const increment = () => [
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+h5.fish {
+	color: purple;
 }
 </style>

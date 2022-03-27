@@ -9,7 +9,7 @@
     "@vue/compiler-core": "^3.2.22",
     "@vue/compiler-sfc": "^3.2.22",
     "esbuild": "^0.14.28",
-    "esbuild-plugin-vue-next": "^0.1.4",
-    "esbuild-plugin-vue3": "^0.3.0"
+    "esbuild-copy-static-files": "^0.1.0",
+    "esbuild-plugin-vue-next": "^0.1.4"
   }
 }

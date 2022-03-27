@@ -119,6 +119,11 @@ esbuild-android-arm64@0.14.28:
   resolved "https://registry.yarnpkg.com/esbuild-android-arm64/-/esbuild-android-arm64-0.14.28.tgz#110ff82019e75b866b53844c32f19f7933b4ce36"
   integrity sha512-sm0fDEGElZhMC3HLZeECI2juE4aG7uPfMBMqNUhy9CeX399Pz8rC6e78OXMXInGjSdEAwQmCOHmfsP7uv3Q8rA==
 
+esbuild-copy-static-files@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/esbuild-copy-static-files/-/esbuild-copy-static-files-0.1.0.tgz#4bb4987b5b554d2fc122a45f077d74663b4dbcf0"
+  integrity sha512-KlpmYqANA1t2nZavEdItfcOjJC6wbHA21v35HJWN32DddGTWKNNGDKljUzbCPojmpD+wAw8/DXr5abJ4jFCE0w==
+
 esbuild-darwin-64@0.14.28:
   version "0.14.28"
   resolved "https://registry.yarnpkg.com/esbuild-darwin-64/-/esbuild-darwin-64-0.14.28.tgz#d929ce16035da6047504fe8a71587d2ac9b756ed"
@@ -197,15 +202,6 @@ esbuild-plugin-vue-next@^0.1.4:
     convert-source-map "^1.8.0"
     hash-sum "^2.0.0"
 
-esbuild-plugin-vue3@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/esbuild-plugin-vue3/-/esbuild-plugin-vue3-0.3.0.tgz#5317252b8c9e474789ea570083a8b2f3618f99f4"
-  integrity sha512-b8ypadGLuxJ02cPUXn/2yKhwMsEQ/JZMO3lN871X12ZKigXymZStBCexVI4C7lr7lguxa+IpU94pRQ/BtInMsQ==
-  dependencies:
-    "@vue/compiler-core" "^3.2.22"
-    "@vue/compiler-sfc" "^3.2.22"
-    esbuild "^0.12.22"
-
 esbuild-sunos-64@0.14.28:
   version "0.14.28"
   resolved "https://registry.yarnpkg.com/esbuild-sunos-64/-/esbuild-sunos-64-0.14.28.tgz#5b82807ebe435519a2689e1a4d50b8a3cc5c64c0"
@@ -225,11 +221,6 @@ esbuild-windows-arm64@0.14.28:
   version "0.14.28"
   resolved "https://registry.yarnpkg.com/esbuild-windows-arm64/-/esbuild-windows-arm64-0.14.28.tgz#c527d52ec7d1f868259d0f74ecc4003e8475125d"
   integrity sha512-VhXGBTo6HELD8zyHXynV6+L2jWx0zkKnGx4TmEdSBK7UVFACtOyfUqpToG0EtnYyRZ0HESBhzPSVpP781ovmvA==
-
-esbuild@^0.12.22:
-  version "0.12.29"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.29.tgz#be602db7c4dc78944a9dbde0d1ea19d36c1f882d"
-  integrity sha512-w/XuoBCSwepyiZtIRsKsetiLDUVGPVw1E/R3VTFSecIy8UR7Cq3SOtwKHJMFoVqqVG36aGkzh4e8BvpO1Fdc7g==
 
 esbuild@^0.14.28:
   version "0.14.28"

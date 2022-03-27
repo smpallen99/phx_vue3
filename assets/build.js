@@ -1,18 +1,21 @@
 const esbuild = require('esbuild')
-// const vuePlugin = require("esbuild-plugin-vue3")
 const pluginVue = require('esbuild-plugin-vue-next')
-
+const copyStaticFiles = require('esbuild-copy-static-files')
+require('fs')
 const bundle = true
 const logLevel = process.env.ESBUILD_LOG_LEVEL || 'silent'
 const watch = !!process.env.ESBUILD_WATCH
 
 const plugins = [
-  // Add and configure plugins here
-  // vuePlugin({
-  //   generateHTML: false,
-  //   // generateHTML: 'js/vue/index.html'
-  // })
-  pluginVue()
+  pluginVue(),
+  copyStaticFiles({
+    src: 'js/vue/src/assets',
+    dest: '../priv/static/images',
+    dereference: true,
+    errorOnExist: false,
+    preserveTimestamps: true,
+    recursive: true,
+  })
 ]
 
 const promise = esbuild.build({
@@ -22,7 +25,15 @@ const promise = esbuild.build({
   plugins,
   outdir: '../priv/static/assets',
   logLevel,
-  watch
+  watch,
+  external: [
+    '/images/*'
+  ]
+  // external: [
+  //   /fonts/*,
+  //   /images/*
+  // ]
+  // // loader: { ".png": "file"}
 })
 
 if (watch) {
