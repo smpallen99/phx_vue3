@@ -1,17 +1,14 @@
 <script setup>
-import { ref } from 'vue'
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 // import Test from './components/Test.vue'
 import HelloWorld from './components/HelloWorld.vue'
+
+// the following is an example of using a js file that may be shared by the
+// phoenix app.js
 import { meaningOfLife } from '../../shared'
 
 console.log('App.vue')
-const counter = ref(0)
-const increment = () => [
-	counter.value++
-]
-
 </script>
 
 <template>

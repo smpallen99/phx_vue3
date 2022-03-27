@@ -1,7 +1,7 @@
 const esbuild = require('esbuild')
 const pluginVue = require('esbuild-plugin-vue-next')
 const copyStaticFiles = require('esbuild-copy-static-files')
-require('fs')
+
 const bundle = true
 const logLevel = process.env.ESBUILD_LOG_LEVEL || 'silent'
 const watch = !!process.env.ESBUILD_WATCH
@@ -29,11 +29,6 @@ const promise = esbuild.build({
   external: [
     '/images/*'
   ]
-  // external: [
-  //   /fonts/*,
-  //   /images/*
-  // ]
-  // // loader: { ".png": "file"}
 })
 
 if (watch) {

@@ -43,4 +43,6 @@ import "phoenix_html"
 // >> liveSocket.disableLatencySim()
 // window.liveSocket = liveSocket
 
-// import "./vue/src/main"
+import { meaningOfLife } from "./shared"
+
+console.log('meaning of life', meaningOfLife())
