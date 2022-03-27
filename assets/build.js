@@ -6,6 +6,10 @@ const bundle = true
 const logLevel = process.env.ESBUILD_LOG_LEVEL || 'silent'
 const watch = !!process.env.ESBUILD_WATCH
 
+// support dynamic imports in Vue.
+const splitting = true
+const format = 'esm'
+
 const plugins = [
   pluginVue(),
   copyStaticFiles({
@@ -26,6 +30,9 @@ const promise = esbuild.build({
   outdir: '../priv/static/assets',
   logLevel,
   watch,
+  splitting,
+  format,
+  // Not sure how to handle the Elixir esbuild externals yet.
   external: [
     '/images/*'
   ]

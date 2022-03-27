@@ -14,12 +14,18 @@ This is an early prototype to demonstrate:
 * copy vue asset images
 * include the css files
 * HMR for the Vue files
+* vue-router
+* dynamic import modules (see router)
 
 ### Todo
 
 1. Get scss and sass working
-1. Get router and store working
+1. Get store working
 1. Test with production and releases
+1. Add linting and formatting
+1. Add component library (quasar)
+1. Figure out server -> client communications (without API)
+  * perhaps with channel connected to a pinia/vuex store?
 
 ## Misc
 

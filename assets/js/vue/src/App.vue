@@ -13,8 +13,12 @@ console.log('App.vue')
 
 <template>
   <img alt="Vue logo" src="/images/logo.png" />
-	<HelloWorld msg="Hello Vue 3 + esBuild" />
+	<!-- <HelloWorld msg="Hello Vue 3 + esBuild" /> -->
 	<h5 class="fish">{{ meaningOfLife() }}</h5>
+	<router-link to="/">HelloWorld</router-link>
+	|
+	<router-link to="/about">About</router-link>
+	 <router-view></router-view>
 </template>
 
 <style>
