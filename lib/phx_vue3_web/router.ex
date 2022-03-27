@@ -18,6 +18,7 @@ defmodule PhxVue3Web.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/vue", PageController, :vue
   end
 
   # Other scopes may use custom stacks.

@@ -43,3 +43,4 @@ import "phoenix_html"
 // >> liveSocket.disableLatencySim()
 // window.liveSocket = liveSocket
 
+// import "./vue/src/main"
