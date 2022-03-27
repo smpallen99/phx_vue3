@@ -5,6 +5,7 @@ import { ref } from 'vue'
 // import HelloWorld from './components/HelloWorld.vue'
 // import HelloWorld from './components/HelloWorld.vue'
 import Test from './components/Test.vue'
+import { meaningOfLife } from '../../shared'
 
 console.log('App.vue')
 const counter = ref(0)
@@ -19,6 +20,7 @@ const increment = () => [
   <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
 	<button @click="increment">Increment {{ counter }}</button>
 	<Test msg="Hello Vue 3" />
+	<h5>{{ meaningOfLife() }}</h5>
 </template>
 
 <style>
